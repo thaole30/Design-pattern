@@ -1,0 +1,16 @@
+
+export default class FancyLogger {
+    constructor() {
+        this.logs = [];
+    }
+
+    log(message) {
+        this.logs.push(message);
+        console.log(`my message ${message}`);
+    }
+
+    printLogCount() {
+        console.log("logs number", this.logs.length);
+    }
+
+}
